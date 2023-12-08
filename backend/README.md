@@ -1,2 +1,2 @@
-# team08
-Arachnid Design API
+# cura backend
+Developed using .NET and MS SQL Server
