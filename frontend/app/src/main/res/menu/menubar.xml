@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home">
+        </item>
+        <item android:id="@+id/nav_UpdateAccount"
+            android:icon="@drawable/ic_baseline_account_box_24"
+            android:title="Update Account">
+        </item>
+        <item android:id="@+id/nav_Setting"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Setting">
+        </item>
+        <item android:id="@+id/nav_AboutUs"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="About Us">
+        </item>
+        <item android:id="@+id/nav_LogOut"
+            android:icon="@drawable/ic_baseline_logout_24"
+            android:title="Logout">
+        </item>
+    </group>
+
+
+<!--    <group android:checkableBehavior="single"-->
+<!--        android:id="@+id/group2">-->
+<!--        <item android:id="@+id/nav_AboutUs"-->
+<!--            android:icon="@drawable/ic_baseline_people_24"-->
+<!--            android:title="About Us">-->
+<!--        </item>-->
+<!--        <item android:id="@+id/nav_LogOut"-->
+<!--            android:icon="@drawable/ic_baseline_logout_24"-->
+<!--            android:title="Logout">-->
+<!--        </item>-->
+<!--    </group>-->
+
+</menu>

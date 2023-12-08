@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:contentDescription="Meeting Slot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_Calendar"
+                android:layout_width="10dp"
+                android:layout_height="100dp"
+                android:background="@color/light_green"/>
+            <LinearLayout
+                android:layout_toEndOf="@id/img_Calendar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="12dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cal_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Sub item title"/>
+                <TextView
+                    android:id="@+id/calDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_note_small_for_card"
+                    android:text="Description goes here..."/>
+                <TextView
+                    android:id="@+id/calBookingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24_forcard"
+                    android:text="Booking Time"/>
+                <TextView
+                    android:id="@+id/calendarID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

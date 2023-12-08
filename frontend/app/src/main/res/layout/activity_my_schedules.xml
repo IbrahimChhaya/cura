@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    tools:context=".MySchedules">
+
+
+    <TextView
+        android:id="@+id/lblschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Bookings"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Date"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="406dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDate">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/eighteenapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:background="#FF9565"
+                android:backgroundTint="#FF9565"
+                android:text="Sun 3"
+                app:backgroundTint="#9C27B0"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/nineteenapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Mon 4"
+                app:backgroundTint="#9C27B0"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentyoneapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Tue 5"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentytwoapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Wed 6"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentythreeapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Thu 7"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentyfourapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Fri 8"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentyfiveapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="sun 10"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentysixapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Mon 26"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentysevenapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Tue 27"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentyeightapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Wed 28"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/twentynineapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Thur 29"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <Button
+                android:id="@+id/thirtyapril"
+                android:layout_width="75dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#FF9565"
+                android:text="Fri 30"
+                tools:layout_editor_absoluteX="262dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/lblappointmentcount"
+        android:layout_width="261dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/lbltime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblappointmentcount" />
+
+    <TextView
+        android:id="@+id/lbltime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbltime1" />
+
+    <TextView
+        android:id="@+id/lblappointment"
+        android:layout_width="261dp"
+        android:layout_height="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbltime2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbltime1" />
+
+    <EditText
+        android:id="@+id/edtDisplay"
+        android:layout_width="410dp"
+        android:layout_height="441dp"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="No Bookings Made Yet"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+include ':app'
+rootProject.name = "MHAPrototype"
+
+include ':app'
+
+include ':app', ':commonlib'
+include ':app', ':mobilertc'

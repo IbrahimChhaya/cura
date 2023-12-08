@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    tools:context="PsychologistCalendar.PsychologistCalendar">
+
+
+  <!--<TextView
+      android:id="@+id/txtCalendarHeading2"
+      android:layout_width="369dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/colorAccent"
+      android:gravity="center"
+      android:textColor="#FFFFFF"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.485"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/customCalendar2" />-->
+
+  <org.naishadhparmar.zcustomcalendar.CustomCalendar
+      android:id="@+id/customCalendar2"
+      android:layout_width="399dp"
+      android:layout_height="339dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+  <ListView
+      android:id="@+id/calendarListView"
+      android:layout_width="400dp"
+      android:layout_height="185dp"
+      android:layout_margin="15dp"
+      android:layout_marginTop="73dp"
+      android:divider="#FBF5F2"
+      android:dividerHeight="13dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+  <TextView
+      android:id="@+id/textView10"
+      android:layout_width="246dp"
+      android:layout_height="43dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:gravity="center"
+      android:text="Select Date and Time"
+      android:textSize="25sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.371"
+      app:layout_constraintStart_toEndOf="@+id/imgbtnPrev"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageButton
+      android:id="@+id/imgbtnPrev"
+      android:layout_width="36dp"
+      android:layout_height="31dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/rounded_back_button"
+      android:backgroundTint="#FBF5F2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+  <TextView
+      android:id="@+id/txtSelectedDate"
+      android:layout_width="387dp"
+      android:layout_height="38dp"
+      android:layout_marginStart="2dp"
+      android:layout_marginEnd="2dp"
+      android:text="Select a date from calendar"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/customCalendar2" />
+
+  <TextView
+      android:id="@+id/textView24"
+      android:layout_width="384dp"
+      android:layout_height="40dp"
+      android:layout_marginStart="2dp"
+      android:layout_marginEnd="2dp"
+      android:text="Available Sessions"
+      android:textSize="15sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtSelectedDate" />
+
+  <!-- <TextView
+       android:id="@+id/textViewHeading"
+       android:layout_width="365dp"
+       android:layout_height="27dp"
+       android:layout_marginTop="52dp"
+       android:backgroundTint="@color/colorPrimary"
+       android:gravity="center"
+       android:textColor="@color/white"
+       android:textSize="14sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.586"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/customCalendar2" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

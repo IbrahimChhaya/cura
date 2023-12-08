@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mhaprototype">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.twilio.chat.demo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.twilio.chat.demo.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo2"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MHAPrototype"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="psychologistHome.PracticeDetails.EditRegistrationNumber"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PracticeDetails.EditSpeciality"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PracticeDetails.EditDescription"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PracticeDetails.EditQualification"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PracticeDetails.UpdatePracticeDetails"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.UpcomingAppointments"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.GeneralReports"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PatientReport"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.PsychPatientList"
+            android:exported="true" />
+        <activity
+            android:name="psychologistHome.psychologist_home"
+            android:exported="true" />
+        <activity
+            android:name="InAppGuidance.AppIntro"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name="VideoSubsystem.VideoMain"
+            android:exported="true" />
+        <activity
+            android:name="Account.Child.EditChildPassword2"
+            android:exported="true" />
+        <activity
+            android:name="Account.Child.EditGrade2"
+            android:exported="true" />
+        <activity
+            android:name="Account.Child.EditChildEmail2"
+            android:exported="true" />
+        <activity
+            android:name="StartUpStuff.GuardianChildRegister.GuardianRegistersChild4"
+            android:exported="true" />
+        <activity
+            android:name="StartUpStuff.ChildLogInRedesign.ChildTextPasswordSignin"
+            android:exported="true" />
+        <activity
+            android:name="StartUpStuff.ChildRegister.ChildRegisterTextPassword"
+            android:exported="true" />
+        <activity
+            android:name="PsychologistList.PsychologistList2"
+            android:exported="true" />
+        <activity
+            android:name="PsychologistList.SearchablePsychologistList"
+            android:exported="true" />
+        <activity
+            android:name="Barcode.PairingSelector"
+            android:exported="true" />
+        <activity
+            android:name="ChildList.ChildListRedesigned"
+            android:exported="true" />
+        <activity android:name="StartUpStuff.GuardianChildRegister.GuardianRegistersChild3" /> <!-- android:exported="true" /> -->
+        <activity android:name="StartUpStuff.GuardianChildRegister.GuardianRegistersChild2" /> <!-- android:exported="true" /> -->
+        <activity android:name="StartUpStuff.GuardianChildRegister.GuardianRegistersChild1" /> <!-- android:exported="true" /> -->
+        <activity
+            android:name="Barcode.Barcode_Modified_Scanner"
+            android:exported="true" />
+        <activity
+            android:name="Barcode.Barcode_Scanner"
+            android:exported="true" />
+        <activity android:name="StartUpStuff.GuardianRegister.NewGuardianRegister2" />
+        <activity android:name="StartUpStuff.GuardianRegister.NewGuardianRegister" />
+        <activity android:name="Chat.ChatPsychList" />
+        <activity android:name="Chat.ChatBox" />
+        <activity android:name="StartUpStuff.SignInRoles" />
+        <activity android:name="StartUpStuff.NewStartUp" />
+        <activity android:name="Appointment.EditAppointment" />
+        <activity android:name="Appointment.TabbedAppointmentMain" />
+        <activity android:name="ChildTestSubsystem.ChildTestMain" />
+        <activity android:name="Account.Child.EditChildPassword" />
+        <activity android:name="Account.Child.EditChildEmail" />
+        <activity android:name="Account.Child.EditGrade" />
+        <activity android:name="Account.Child.UpdateChildAccount" />
+        <activity android:name="ChildList.ErrorPages.NoChildLinkedMain" />
+        <activity android:name="ChildReports.ChildReportsMain" />
+        <activity android:name="ChildTestSubsystem.AssignmentMain" />
+        <activity
+            android:name="ResourceHub.ResourceHubMain"
+            android:label="Resource Hub"
+            android:theme="@style/myAppBar" />
+        <activity android:name="PsychologistList.ErrorPages.NoPsychologistLinkedMain" />
+        <activity android:name="Appointment.ErrorPages.NoAppointmentPage" />
+        <activity android:name="PsychologistCalendar.HorizontalPsychologistCalendar" />
+        <activity android:name="ChildMoodTracker.MoodTracker" />
+        <activity android:name=".StartUpActivity" />
+        <activity android:name="PsychologistCalendar.PsychologistCalendar" />
+        <activity android:name=".guardianRegister2" />
+        <activity android:name="Account.EditProfilePicture" />
+        <activity android:name="Account.EditDOB" />
+        <activity android:name="Account.EditPassword" />
+        <activity android:name="Account.EditEmail" />
+        <activity android:name="Account.EditName" />
+        <activity android:name="Account.UpdateGuardianAccount" />
+        <activity android:name="PsychologistList.nearbyPsychologistList" />
+        <activity android:name="StartUpStuff.ChildRegister.ChildRegisterRedesign" />
+        <activity android:name="StartUpStuff.ChildRegister.ChildRegisterRedesign2" />
+        <activity android:name="StartUpStuff.ChildRegister.ChildRegisterRedesign3" />
+        <activity android:name="StartUpStuff.ChildLogInRedesign.ChildLogInRedesign1" />
+        <activity android:name="StartUpStuff.ChildLogInRedesign.ChildLogInRedesign2" />
+        <activity android:name="Barcode.BarcodePairing" />
+        <activity android:name="Chat.Counsellor.CounsellorChatBox" />
+        <activity android:name="InAppGuidance.CustomAppIntro" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="PsychologistList.PsychologistProfile" />
+        <activity
+            android:name="MapLocation.NearestPsychologistMap"
+            android:label="@string/title_activity_nearest_psychologist_map" />
+        <activity android:name="ChildList.ChildListMain" />
+        <activity android:name="PsychologistList.psychologistListView" />
+        <activity android:name=".UpdateAccountChild2" />
+        <activity android:name=".UpdateAccountChild1" />
+        <activity android:name=".UpdatePsychAccount3" />
+        <activity android:name=".UpdatePsychAccount2" />
+        <activity android:name=".UpdatePsychAccount1" />
+        <activity android:name=".DynamicCalendar" />
+        <activity android:name=".PsychRegister3" />
+        <activity android:name=".PsychRegister2" />
+        <activity android:name=".PsychRegister1" />
+        <activity android:name=".ChatStart" />
+        <activity android:name=".ChildLogin" />
+        <activity android:name=".AddPair" />
+        <activity android:name=".Guardian_Home" />
+        <activity android:name=".Child_Home" />
+        <activity android:name=".ViewPsychologist" />
+        <activity android:name=".NavigationPage" />
+        <activity android:name=".AddBooking" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MySchedules" />
+        <activity android:name=".childRegister2" />
+        <activity android:name=".childRegister" />
+        <activity android:name=".registerActivity" />
+        <activity android:name=".LoginRolesActivity" />
+        <activity android:name="Appointment.AppointmentMain" />
+        <activity android:name="ResourceHub.RHubDescription" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    android:visibility="visible"
+    tools:context=".childRegister2">
+
+    <ImageView
+        android:id="@+id/childRegisterBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24_black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/colorViewPager"
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/rightColour"
+        app:layout_constraintStart_toEndOf="@+id/leftColour"
+        app:layout_constraintTop_toBottomOf="@+id/lblfavouritecolor" />
+
+    <ImageView
+        android:id="@+id/leftColour"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="89dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftanimal"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <ImageView
+        android:id="@+id/rightColour"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightAnimal"
+        app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/animalViewPager"
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/rightAnimal"
+        app:layout_constraintStart_toEndOf="@+id/leftanimal"
+        app:layout_constraintTop_toBottomOf="@+id/lblfavouriteanimal" />
+
+    <ImageView
+        android:id="@+id/leftanimal"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftFood"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <ImageView
+        android:id="@+id/rightAnimal"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightFood"
+        app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Email Address"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:width="250dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEmail" />
+
+    <TextView
+        android:id="@+id/lblpicturepassword"
+        android:layout_width="255dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:text="Let's Create A Picture Password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <TextView
+        android:id="@+id/lblfavouritefruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favourite Food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblpicturepassword" />
+
+    <TextView
+        android:id="@+id/lblfavouriteanimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favourite Animal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodViewPager" />
+
+    <TextView
+        android:id="@+id/lblfavouritecolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Favourite Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animalViewPager" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="189dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:text="Next"
+        app:backgroundTint="#FF9565"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorViewPager" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/foodViewPager"
+        android:layout_width="326dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/rightFood"
+        app:layout_constraintStart_toEndOf="@+id/leftFood"
+        app:layout_constraintTop_toBottomOf="@+id/lblfavouritefruit" />
+
+    <ImageView
+        android:id="@+id/leftFood"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/childRegisterBack"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+    <ImageView
+        android:id="@+id/rightFood"
+        android:layout_width="30dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_chevron_right_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

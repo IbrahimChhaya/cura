@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    tools:context=".AddBooking">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/confirmBookingCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintDimensionRatio="1:1.6"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/confToolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Appointment Details"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <!-- linear layout for horizontal 2 cards-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Patient"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="40dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:id="@+id/imgChildPic"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/child0" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:id="@+id/txtBookingDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Name" />
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--card for psychologist details-->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="160dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#FFFFFF"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Psychologist"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            app:cardCornerRadius="40dp"
+                            app:cardElevation="0dp">
+
+                            <ImageView
+                                android:id="@+id/imgPsychImage"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/child0" />
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <TextView
+                            android:id="@+id/txtPsychologistName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Psychologist" />
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#FFFFFF"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/txtBookingDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/bookingcalendar"
+                        android:gravity="start"
+                        android:drawablePadding="10dp"
+                        android:padding="10dp"
+                        android:text="Booking date"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/confirmBookingTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                        android:gravity="start"
+                        android:drawablePadding="10dp"
+                        android:hint="Booking Time"
+                        android:padding="10dp"
+                        android:textAlignment="viewStart" />
+
+                    <TextView
+                        android:id="@+id/confirmBookingType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/ic_baseline_event_note_24"
+                        android:gravity="start"
+                        android:hint="Booking Type"
+                        android:padding="10dp"
+                        android:drawablePadding="10dp"
+                        android:textAlignment="viewStart" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <CheckBox
+                android:id="@+id/consentBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="I agree that the consent forms have been signed"
+                />
+
+
+            <Button
+                android:contentDescription="Confirm appointment clicked"
+                android:id="@+id/btnAddBooking"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Confirm Appointment"
+                app:cornerRadius="30dp" />
+
+        </LinearLayout>
+
+
+        <!--<RelativeLayout
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:padding="10dp">
+
+            &lt;!&ndash; <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/txtHeadingBooking"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Booking Details"
+                android:textColor="#6f6f6f"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            &lt;!&ndash; <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/txtBookingDetails"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeadingBooking"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txtPsychologistName2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBookingDetails"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="Psychologist"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgPsychImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imgChildPic"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/txtPsychologistName2"
+                android:src="@drawable/child0" />
+
+
+            &lt;!&ndash;<Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/txtBookingDate"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPsychologistName2"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:hint="Booking date"
+                android:padding="10dp"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+            &lt;!&ndash; <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />&ndash;&gt;
+
+            <TextView
+                android:id="@+id/confirmBookingTime"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBookingDate"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:hint="Booking Timing"
+                android:padding="10dp"
+                android:textColor="#9E9E9E"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnAddBooking"
+                android:layout_width="299dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/confirmBookingTime"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="65dp"
+                android:text="Add Appointment"
+                app:backgroundTint="#FF9565"
+                app:cornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </RelativeLayout>
+-->
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/confToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/conftextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Toolbar Title"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgbtnPrevadd"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#FBF5F2"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_arrow_back_24_white"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+<!--    <include-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        layout="@layout/drawer_toolbar"/>-->
+<!--    <include-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        layout="@layout/content_main"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView28"-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="44dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        android:layout_marginEnd="56dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Appointment Confirmation"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/backButtonBooking"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/backButtonBooking"-->
+<!--        android:layout_width="41dp"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="#FBF5F2"-->
+<!--        android:src="@drawable/ic_baseline_arrow_back_24"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--  <Button
+          android:id="@+id/btnAddBooking"
+          android:layout_width="324dp"
+          android:layout_height="65dp"
+          android:layout_marginStart="4dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="4dp"
+          android:layout_marginBottom="120dp"
+          android:text="Add Booking"
+          app:backgroundTint="#FF9565"
+          app:cornerRadius="20dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.49"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/confirmBookingCard" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

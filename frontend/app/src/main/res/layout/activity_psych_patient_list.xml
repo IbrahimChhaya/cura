@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2"
+    tools:context="psychologistHome.PsychPatientList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/PsychListToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ic_baseline_arrow_back_24_white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="95dp"
+                    android:layout_gravity="center"
+                    android:text="My Patients"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <EditText
+                    android:contentDescription="Search Bar"
+                    android:id="@+id/PsychSearch"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="0dp"
+                    android:hint="Search"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    android:textSize="14dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="25dp"
+                    android:layout_gravity="center"
+                    android:layout_height="25dp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline2"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/lstPsychList"
+        android:layout_width="388dp"
+        android:layout_height="554dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FBF5F2"
+        android:divider="#FBF5F2"
+        android:dividerHeight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PsychListToolBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

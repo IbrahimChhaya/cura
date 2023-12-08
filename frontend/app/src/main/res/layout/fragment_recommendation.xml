@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ChildReports.recommendationFragment"
+    android:backgroundTint="#FBF5F2">
+
+    <ListView
+        android:layout_marginTop="8dp"
+        android:id="@+id/recommendationList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBF5F2"
+        android:divider="#FBF5F2"
+        android:dividerHeight="10dp" />
+
+
+</FrameLayout>

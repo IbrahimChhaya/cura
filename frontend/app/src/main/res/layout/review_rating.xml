@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="MapLocation.psych_review_fragment"
+    android:orientation="vertical">
+
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/childCard"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:contentDescription="Child clicked"-->
+<!--        android:foregroundGravity="center"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:cardCornerRadius="27dp"-->
+<!--        app:cardElevation="0dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:strokeWidth="1dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingBarReview"
+                    android:layout_width="237dp"
+                    android:layout_height="40dp"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:isIndicator = "true"
+                    android:stepSize="1"
+                    android:progressTint="@color/ratingColor"
+                    android:outlineSpotShadowColor="@color/zm_ui_kit_color_yellow_FAE280"
+                    app:layout_constraintBottom_toTopOf="@+id/reviewGuardianName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reviewGuardianName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Guardian Name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="-17dp"
+                    android:layout_marginLeft="65dp"
+                    app:layout_constraintTop_toBottomOf="@id/ratingBarReview" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/map"-->
+    <!--        android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--        android:layout_width="420dp"-->
+    <!--        android:layout_height="516dp"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginTop="280dp"-->
+    <!--        android:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        android:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_constraintHorizontal_bias="0.0"-->
+    <!--        android:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_constraintTop_toBottomOf="@+id/txtpsychDescription"-->
+    <!--        tools:context="MapLocation.psychMapFragment" />-->
+
+    <!--    <RatingBar-->
+    <!--        android:id="@+id/ratingBarReview"-->
+    <!--        android:layout_width="237dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="36dp"-->
+    <!--        android:scaleX="0.5"-->
+    <!--        android:scaleY="0.5"-->
+    <!--        android:isIndicator = "true"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/reviewGuardianName"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/reviewGuardianName"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Guardian Name"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--      android:layout_marginLeft="55dp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/ratingBarReview" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txtpsychDescription"-->
+    <!--        android:layout_width="340dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_constraintHorizontal_bias="0.0"-->
+    <!--        android:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--        android:text="I am displaying"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+</LinearLayout>

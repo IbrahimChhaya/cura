@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FBF5F2">
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar3"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#FBF5F2"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:titleMarginStart="150dp"-->
+    <!--        app:logo="@drawable/ic_baseline_arrow_back_24">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/toolbarTextView"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:text="Illness Name"-->
+    <!--            app:titleMarginStart="150dp"-->
+    <!--            android:textColor="@color/black"/>-->
+    <!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/globalToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/globaltoolbarText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Toolbar Title"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/gobackglobalbutton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#FBF5F2"
+        android:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_arrow_back_24_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:orientation="vertical" android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:backgroundTint="#FBF5F2">-->
+
+<!--   &lt;!&ndash; <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>&ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:backgroundTint="#FBF5F2">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgbtnPrevChild12"-->
+<!--            android:layout_width="41dp"-->
+<!--            android:layout_height="47dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:backgroundTint="#FBF5F2"-->
+<!--            android:src="@drawable/ic_baseline_arrow_back_24" />-->
+
+<!--      &lt;!&ndash;  <Space-->
+<!--            android:layout_width="55dp"-->
+<!--            android:layout_height="wrap_content"/>&ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Your Psychologists"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->

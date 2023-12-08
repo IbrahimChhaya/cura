@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#FBF5F2"
+    app:cardElevation="0dp">
+
+
+    <!--linear layout main-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <!--linear layout for the time line-->
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--three cards for the timeline-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="3dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="0dp"
+                android:backgroundTint="#4CAF50">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#4CAF50">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="3dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="8dp"
+                app:cardCornerRadius="0dp"
+                android:backgroundTint="#4CAF50">
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--three cards for the timeline-->
+
+        </LinearLayout>
+        <!--linear layout for the time line-->
+
+
+        <!--card for the main description-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:contentDescription="Child feedback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/txtFeedBackText"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--linear layout main-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

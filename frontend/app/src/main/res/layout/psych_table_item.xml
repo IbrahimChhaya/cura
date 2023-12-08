@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtDay"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtTypeBooking"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:shadowColor="#CDBBBB" />
+
+    <TextView
+        android:id="@+id/txtStartHour"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtBreakHour"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/txtEndHour"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.25"
+        android:gravity="center" />
+
+</TableRow>

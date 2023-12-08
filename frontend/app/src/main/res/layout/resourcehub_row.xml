@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5F2">
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/confirmBookingCard"-->
+    <!--        android:layout_width="375dp"-->
+    <!--        android:layout_height="600dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="56dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+
+    <!--        android:padding="10dp"-->
+    <!--        app:cardCornerRadius="40dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="30dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:padding="10dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/newImg"-->
+    <!--                android:layout_width="100dp"-->
+    <!--                android:layout_height="100dp"-->
+    <!--                android:src="@drawable/iconfinder_115777_video_icon_512px" />-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="30dp" />-->
+
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/newNametext"-->
+    <!--                android:layout_width="317dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:text="Booking Details"-->
+    <!--                android:textColor="#6f6f6f"-->
+    <!--                android:textSize="25sp"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <Space-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="50dp" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/newDescriptiontext"-->
+    <!--                android:layout_width="326dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_margin="5dp"-->
+    <!--                android:layout_marginTop="12dp"-->
+    <!--                android:hint="Booking date"-->
+    <!--                android:padding="10dp"-->
+    <!--                android:textColor="#9E9E9E"-->
+    <!--                android:textSize="16sp" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/illnessName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#FBF5F2"-->
+<!--        android:gravity="start"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:title="Illness Name"-->
+<!--        app:titleMarginStart="150dp" />-->
+
+    <ImageView
+        android:id="@+id/illnessImage"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="5dp"
+        android:backgroundTint="#FBF5F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!--        <ImageButton-->
+<!--        android:id="@+id/goBackRhubMain"-->
+<!--        android:layout_width="36dp"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/rounded_back_button"-->
+<!--        android:onClick="GoBack"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.043"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/abc_vector_test" />-->
+
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/illnessName"-->
+<!--        android:layout_width="359dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:padding="2dp"-->
+<!--        android:text="Something"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/backRhubmain"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="308dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/illnessImage">
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="vertical">-->
+
+        <!--    </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/illnessDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Again"
+            android:textColor="@color/black" />
+        <!--            android:layout_marginLeft="50dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginRight="30dp"-->
+
+    </LinearLayout>
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/backRhubmain"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:backgroundTint="#FBF5F2"-->
+<!--        android:src="@drawable/ic_baseline_arrow_back_24"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

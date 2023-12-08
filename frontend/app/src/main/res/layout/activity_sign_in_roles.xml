@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloud"
+    tools:context="StartUpStuff.SignInRoles">
+
+    <!--   <ImageView
+           android:id="@+id/imageView17"
+           android:layout_width="403dp"
+           android:layout_height="113dp"
+           android:background="@drawable/rounded_image_view"
+           android:backgroundTint="#FBF5F2"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_baseline_arrow_back_24_black"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pick Your Role"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/arrowBack" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/childCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#A0D4FD"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:layout_constraintDimensionRatio="2:.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/child0"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="321dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Child"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore this child friendly application"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/guardianCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#A1EDA1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/childCardView"
+        app:layout_constraintDimensionRatio="2:.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/adult4"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="321dp"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parent"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the app from parents point of view"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/psychologistCardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#e2cbfe"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guardianCardView"
+        app:layout_constraintDimensionRatio="2:.8"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/adult9"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="62dp"
+                tools:layout_editor_absoluteY="321dp"
+                android:layout_marginLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Psychologist"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are you a psychologist? Click here to proceed"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!--adding the guidelines-->
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="184dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_icons"
+        android:max="50"
+        android:progress="10"
+        android:progressTint="@color/colorPrimary"
+        android:secondaryProgressTint="@color/light_green"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/psychologistCardView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@drawable/cloud"-->
+    <!--    tools:context="StartUpStuff.SignInRoles">-->
+
+    <!-- &lt;!&ndash;   <ImageView-->
+    <!--        android:id="@+id/imageView17"-->
+    <!--        android:layout_width="403dp"-->
+    <!--        android:layout_height="113dp"-->
+    <!--        android:background="@drawable/rounded_image_view"-->
+    <!--        android:backgroundTint="#FBF5F2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/arrowBack"-->
+    <!--        android:layout_width="35dp"-->
+    <!--        android:layout_height="35dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:background="@drawable/ic_baseline_arrow_back_24_black"-->
+    <!--        app:layout_constraintHorizontal_bias="0.042"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView29"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:text="Pick Your Role"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="28sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintHorizontal_bias="0.122"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/arrowBack" />-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:id="@+id/childCardView"-->
+    <!--        android:layout_width="370dp"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        app:cardCornerRadius="15dp"-->
+    <!--        app:cardElevation="0dp"-->
+    <!--        android:backgroundTint="#E2E2E2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView29"-->
+    <!--        >-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:src="@drawable/child0"-->
+    <!--            tools:layout_editor_absoluteX="62dp"-->
+    <!--            tools:layout_editor_absoluteY="321dp" />-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_gravity="center">-->
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Child"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_marginLeft="16dp"/>-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Explore this child friendly application"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:layout_marginLeft="16dp"/>-->
+    <!--            </LinearLayout>-->
+
+    <!--        </LinearLayout>-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:id="@+id/guardianCardView"-->
+    <!--        android:layout_width="370dp"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        app:cardCornerRadius="15dp"-->
+    <!--        app:cardElevation="0dp"-->
+    <!--        android:backgroundTint="#EFE9F4"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/childCardView"-->
+    <!--        >-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="horizontal">-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:src="@drawable/adult4"-->
+    <!--            tools:layout_editor_absoluteX="62dp"-->
+    <!--            tools:layout_editor_absoluteY="321dp"-->
+    <!--            android:layout_marginLeft="10dp"-->
+    <!--            />-->
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_gravity="center">-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Parent"-->
+    <!--                android:textSize="22sp"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:layout_marginLeft="16dp"/>-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Explore the app from parents point of view"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:layout_marginLeft="16dp"/>-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:id="@+id/psychologistCardView"-->
+    <!--        android:layout_width="370dp"-->
+    <!--        android:layout_height="150dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        app:cardCornerRadius="15dp"-->
+    <!--        app:cardElevation="0dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        android:backgroundTint="#e2cbfe"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/guardianCardView"-->
+    <!--        >-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="horizontal">-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="100dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:src="@drawable/adult9"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                tools:layout_editor_absoluteX="62dp"-->
+    <!--                tools:layout_editor_absoluteY="321dp"-->
+    <!--                android:layout_marginLeft="10dp"-->
+    <!--                />-->
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:layout_gravity="center">-->
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Psychologist"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:layout_marginTop="10dp"-->
+    <!--                    android:layout_marginLeft="16dp"/>-->
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="Are you a psychologist? Click here to proceed"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:layout_marginLeft="16dp"/>-->
+    <!--            </LinearLayout>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar2"-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:layout_width="184dp"-->
+    <!--        android:layout_height="23dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:background="@drawable/rounded_icons"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:max="50"-->
+    <!--        android:secondaryProgressTint="@color/light_green"-->
+    <!--        android:progressTint="@color/colorPrimary"-->
+    <!--        android:progress="10"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/psychologistCardView" />-->
+
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@drawable/cloud"-->
+<!--    tools:context="StartUpStuff.SignInRoles">-->
+
+<!-- &lt;!&ndash;   <ImageView-->
+<!--        android:id="@+id/imageView17"-->
+<!--        android:layout_width="403dp"-->
+<!--        android:layout_height="113dp"-->
+<!--        android:background="@drawable/rounded_image_view"-->
+<!--        android:backgroundTint="#FBF5F2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/arrowBack"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/ic_baseline_arrow_back_24_black"-->
+<!--        app:layout_constraintHorizontal_bias="0.042"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView29"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Pick Your Role"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintHorizontal_bias="0.122"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/arrowBack" />-->
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/childCardView"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="0dp"-->
+<!--        android:backgroundTint="#E2E2E2"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView29"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/child0"-->
+<!--            tools:layout_editor_absoluteX="62dp"-->
+<!--            tools:layout_editor_absoluteY="321dp" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Child"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="16dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Explore this child friendly application"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginLeft="16dp"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/guardianCardView"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="0dp"-->
+<!--        android:backgroundTint="#EFE9F4"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/childCardView"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/adult4"-->
+<!--            tools:layout_editor_absoluteX="62dp"-->
+<!--            tools:layout_editor_absoluteY="321dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Parent"-->
+<!--                android:textSize="22sp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginLeft="16dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Explore the app from parents point of view"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginLeft="16dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/psychologistCardView"-->
+<!--        android:layout_width="370dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="0dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:backgroundTint="#e2cbfe"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/guardianCardView"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:src="@drawable/adult9"-->
+<!--                android:layout_gravity="center"-->
+<!--                tools:layout_editor_absoluteX="62dp"-->
+<!--                tools:layout_editor_absoluteY="321dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                />-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_gravity="center">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Psychologist"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="16dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Are you a psychologist? Click here to proceed"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginLeft="16dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar2"-->
+<!--        style="?android:attr/progressBarStyleHorizontal"-->
+<!--        android:layout_width="184dp"-->
+<!--        android:layout_height="23dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/rounded_icons"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:max="50"-->
+<!--        android:secondaryProgressTint="@color/light_green"-->
+<!--        android:progressTint="@color/colorPrimary"-->
+<!--        android:progress="10"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/psychologistCardView" />-->
+
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
