@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[ToDoItem]
+(
+	[ItemID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [Item ] VARCHAR(MAX) NOT NULL, 
+    [Status] BIT NOT NULL, 
+    [ToDoID] INT NOT NULL,
+    FOREIGN KEY ([ToDoID]) REFERENCES [dbo].[ToDo](ToDoID)
+)

@@ -1,0 +1,281 @@
+﻿:root {
+    --main-color: #FBF5F2;
+    --orange: #FF9965;
+    --text-blue: #022F5B;
+    --text-grey: #8390A2;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semibold';
+    src: url('../fonts/seguisb.eot');
+    src: url('../fonts/seguisb.eot?#iefix') format('embedded-opentype'), url('../fonts/seguisb.woff2') format('woff2'), url('../fonts/seguisb.woff') format('woff'), url('../fonts/seguisb.ttf') format('truetype'), url('../fonts/seguisb.svg#Segoe UI Semibold') format('svg');
+}
+
+html {
+    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grey-line {
+    border-left: 2px solid var(--text-grey);
+    height: 50px;
+}
+
+.circle-line {
+    width: 2px;
+    height: 100px;
+    background-color: var(--orange);
+    position: relative;
+    margin: auto 70px auto auto;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: solid 2px var(--orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: calc(50% - 7.5px);
+}
+
+.appointment-card {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background: white;
+}
+
+    .appointment-card span {
+        margin: auto;
+    }
+
+    .appointment-card a {
+        margin: auto;
+    }
+
+    .appointment-card img {
+        margin: auto;
+    }
+
+
+.note-btn :hover {
+    cursor: pointer;
+}
+
+    .note-btn span {
+        padding-left: 5px;
+    }
+
+    .note-btn:focus {
+        outline: none;
+    }
+.note-btn span, .note-btn i {
+    /*background: white;*/
+    color: var(--orange);
+}
+
+.consultation-type {
+    line-height: 50%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.patient-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.nextProfile {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.details {
+    margin: auto;
+    text-align: center;
+}
+
+.keyword-group {
+    padding-top: 2rem;
+}
+
+    .keyword-group span {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .keyword-group button {
+        padding: 0.3rem 0.5rem;
+    }
+
+.btn-keyword {
+    background-image: none;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: inline-block;
+    padding: .625rem 1.25rem;
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: .25rem;
+    background-color: transparent;
+}
+
+    .btn-keyword:not(:last-child) {
+        margin-right: .5rem;
+    }
+
+.keyword-1 {
+    color: #11cdef;
+    border-color: #11cdef;
+}
+
+.keyword-2 {
+    color: #fb6340;
+    border-color: #fb6340;
+}
+
+.keyword-3 {
+    color: #2dce89;
+    border-color: #2dce89;
+}
+
+.keyword-4 {
+    color: #f5365c;
+    border-color: #f5365c;
+}
+
+.crop {
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 1600px) {
+    .crop {
+        width: 50%;
+    }
+}
+
+.chat-text {
+    display: flex;
+}
+
+.name-chat {
+    /* padding-left: 1rem; */
+    color: var(--text-blue);
+}
+
+.chat-message {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stop-scroll {
+    overflow:hidden;
+}
+
+.calendar-padding {
+    padding-left: 0.1rem;
+    color: #048A1A;
+}
+
+.next-patient-details {
+    color: #717981;
+}
+
+.mbadge {
+    position: relative;
+    top: -2.7rem;
+    right: -23rem;
+    padding: 4px 5px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: white;
+}
+
+.bell-badge {
+    font-size: 8.58px;
+    position: relative;
+    top: -0.7rem;
+    right: 0.7rem;
+    padding: 3px 5px;
+    border-radius: 50%;
+    background-color: var(--orange);
+    color: white;
+}
+
+.active-sidebar {
+    background: #FBF5F2;
+}
+
+.nav-link-text {
+    font-size: 16px;
+}
+
+.left-group {
+    color: white;
+    width: 40%;
+    background: var(--orange);
+    border-radius: 15px;
+    padding: 10px 0px 0px 10px;
+}
+
+.btn-profile-chat {
+    bottom: .5rem;
+    color: var(--orange);
+    background: white;
+    width: 7rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.chat-button {
+    text-align: center;
+}
+
+.app-details {
+    text-align: center;
+    padding: 0px 0px 10% 15%;
+    margin-top: -15px;
+    line-height: 1px;
+}
+
+.app-upcoming {
+    float: left;
+}
+
+.profile-body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+}
+
+.right-group {
+    width: 60%;
+    padding-left: 2%;
+}
+
+.patient-overview {
+    display: flex;
+}
+
+.profile-keywords {
+    text-align: center;
+    margin-top: -25px;
+}
+
+.edit-profile-btn {
+    padding-top: 2%;
+}
+
+    .edit-profile-btn button {
+        border-radius: 50px;
+        padding-bottom: 1%;
+    }

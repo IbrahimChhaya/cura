@@ -1,0 +1,55 @@
+References and Attributions
+
+Resource hub:
+https://kidshealth.org/en/parents/anxiety-disorders.html
+https://www.nimh.nih.gov/health/publications/bipolar-disorder-in-children-and-teens/
+https://www.childrenshospital.org/conditions-and-treatments/conditions/b/bipolar-disorder/symptoms-and-causes
+https://www.rethink.org/advice-and-information/about-mental-illness/learn-more-about-conditions/dissociation-and-dissociative-identity-disorder-did/
+https://kidshealth.org/en/parents/eating-disorders.html
+https://kidshealth.org/en/kids/ocd.html
+https://kidshealth.org/en/parents/ocd.html
+https://my.clevelandclinic.org/health/diseases/9784-paranoid-personality-disorder
+https://kidshealth.org/en/parents/ptsd.html
+https://www.mentalhealth.gov/what-to-look-for/psychotic-disorders/schizophrenia
+https://kidshealth.org/en/parents/adhd.html
+
+Argon dashboard:
+Product Page: https://www.creative-tim.com/product/argon-dashboard
+Copyright  Creative Tim (http://www.creative-tim.com)
+Coded by www.creative-tim.com
+
+Resource Hub Images:
+https://storyset.com/illustration/bipolar-disorder/pana
+https://storyset.com/illustration/depression/pana
+https://storyset.com/illustration/obsessive-compulsive-disorder/pana
+https://storyset.com/illustration/social-anxiety/pana
+https://storyset.com/illustration/post-traumatic-stress-disorder/pana
+https://storyset.com/illustration/anorexia/pana
+https://storyset.com/illustration/insomnia/rafiki
+https://storyset.com/illustration/blue-monday/pana
+https://storyset.com/illustration/bullying/pana
+https://storyset.com/illustration/eating-donuts/pana
+https://storyset.com/illustration/gender-violence/amico
+https://storyset.com/illustration/kids-playing-with-dolls/amico
+https://storyset.com/illustration/kids-playing-with-dolls/rafiki
+
+Color calendar:
+https://github.com/PawanKolhe/color-calendar
+
+Vuetify:
+https://vuetifyjs.com/en/
+
+FullCalendar:
+https://fullcalendar.io/
+
+Vue-Quill-Editor:
+https://github.com/surmon-china/vue-quill-editor
+
+ApexCharts.js:
+https://apexcharts.com/
+
+Counselling home image:
+https://storyset.com/illustration/contact-us/pana
+
+VueNumber:
+https://github.com/nkoik/vue-animated-number
