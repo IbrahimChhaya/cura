@@ -24,6 +24,8 @@ Simple page created for Project's Day demonstration: https://ibrahimchhaya.githu
 Logo variations: [/curaLogos](/Logos)
 
 #### Web Dashboard
+Web screens: [/frontend](/frontend)
+
 Psychologist:
 - Child profile management
 - Note taking
@@ -47,6 +49,8 @@ Admin:
 - Writing Resource Hub articles
 
 #### Mobile App
+App screens: [/app](/app)
+
 Parent/Guardian:
 - Account management
 - Child management (registering, pairing, account)
