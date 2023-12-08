@@ -1,4 +1,70 @@
-# testmhc
+# cura web frontend
+
+Our web dashboard for psychologists and counsellors. The screens below are from an earlier version of the application.
+
+## Login page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Login.png">
+</p>
+
+## Sign up page
+<p align="center">
+      <img width="500" src="/frontend/Screens/SignUp.png">
+</p>
+
+<p align="center">
+      <img width="500" src="/frontend/Screens/SignUp2.png">
+</p>
+
+## Home page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Home.png">
+</p>
+
+## Patients page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Patients.png">
+</p>
+
+## Patient profile page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Profile.png">
+</p>
+
+## Notes page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Notes.png">
+</p>
+<p align="center">
+      <img width="500" src="/frontend/Screens/NotesExpanded.png">
+</p>
+<p align="center">
+      <img width="500" src="/frontend/Screens/NotesExpanded2.png">
+</p>
+
+## Calendar page
+<p align="center">
+      <img width="500" src="/frontend/Screens/Calendar.png">
+</p>
+<p align="center">
+      <img width="500" src="/frontend/Screens/EditCalendar.png">
+</p>
+<p align="center">
+      <img width="500" src="/frontend/Screens/EditCalendar2.png">
+</p>
+
+## Resource Hub page
+<p align="center">
+      <img width="500" src="/frontend/Screens/ResourceHub.png">
+</p>
+<p align="center">
+      <img width="500" src="/frontend/Screens/RHubProblem.png">
+</p>
+
+## Psychologist profile page
+<p align="center">
+      <img width="500" src="/frontend/Screens/PsychProfile.jpg">
+</p>
 
 > A Vue.js project
 
